@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+scheme: http
+keycloak-port: 8080
+keycloak-issuer: ${scheme}://localhost:${keycloak-port}/realms/test
+
+spring:
+  main:
+    web-application-type: servlet
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${keycloak-issuer}
+          jwk-set-uri: ${keycloak-issuer}/protocol/openid-connect/certs

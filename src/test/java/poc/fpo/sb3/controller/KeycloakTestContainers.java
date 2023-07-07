@@ -1,4 +1,4 @@
-package poc.fpo.springsecurity.controller;
+package poc.fpo.sb3.controller;
 
 import dasniko.testcontainers.keycloak.KeycloakContainer;
 import org.apache.http.client.utils.URIBuilder;

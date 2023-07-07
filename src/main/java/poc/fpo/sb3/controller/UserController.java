@@ -1,4 +1,4 @@
-package poc.fpo.springsecurity.controller;
+package poc.fpo.sb3.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;

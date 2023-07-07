@@ -1,4 +1,4 @@
-package poc.fpo.springsecurity;
+package poc.fpo.sb3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package poc.fpo.springsecurity.controller;
+package poc.fpo.sb3.controller;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

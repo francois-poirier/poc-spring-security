@@ -1,4 +1,4 @@
-package poc.fpo.springsecurity;
+package poc.fpo.sb3;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

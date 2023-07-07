@@ -1,0 +1,39 @@
+version: "3.7"
+
+services:
+  idp:
+    image: quay.io/keycloak/keycloak:21.0.0
+    container_name: "idp"
+    ports:
+      - 8080:8080
+    command: start-dev --import-realm
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+      - DB=postgres
+      - DB_URL_HOST=idp-db
+      - DB_SCHEMA=public
+      - DB_DATABASE=keycloak
+      - DB_USER=keycloak
+      - DB_PASSWORD=password
+    volumes:
+      - ./infra/keycloak:/opt/keycloak/data/import
+#      - idp:/opt/keycloak/data:cached        
+    depends_on:
+      - idp-db
+
+  idp-db:
+    image: postgres:13
+    container_name: "idp-db"
+    ports:
+       - "5432:5432"    
+    environment:
+      - POSTGRES_USER=keycloak
+      - POSTGRES_DATABASE=keycloak
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+  idp:

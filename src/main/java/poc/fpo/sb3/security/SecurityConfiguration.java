@@ -1,4 +1,4 @@
-package poc.fpo.springsecurity.security;
+package poc.fpo.sb3.security;
 
 
 import com.nimbusds.jose.shaded.gson.internal.LinkedTreeMap;

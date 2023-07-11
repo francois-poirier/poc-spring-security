@@ -2,18 +2,18 @@
 
 Here’s a list of the steps we will cover in this article:
 
-Setting Up Our Keycloak Server:
-Creating a Realm and Client
-Creating a Client Role
-Creating a User
-Mapping the Client Role to our new User
-Configuring our Spring Boot Project
-Setting up our POM file
-Setting up the Security Config
-Setting the Application Properties
-Setting Up Our Controller and Finishing Up
-Controller set up
-Testing It Out
+## Setting Up Our Keycloak Server:
+- Creating a Realm and Client
+- Creating a Client Role
+- Creating a User
+- Mapping the Client Role to our new User
+- Configuring our Spring Boot Project
+- Setting up our POM file
+- Setting up the Security Config
+- Setting the Application Properties
+- Setting Up Our Controller and Finishing Up
+- Controller set up
+- Testing It Out
 
 ## Setting Up Our Keycloak Server Env
 
